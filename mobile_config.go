@@ -11,6 +11,7 @@ import (
 // sslCrtPath ssl crt path
 // iosCrtPath self-signed csr path
 func Sign(mobileConfigPath, outPath, sslKeyPath, sslCrtPath, iosCrtPath string) error {
+	// see http://www.rootmanager.com/iphone-ota-configuration/iphone-ota-setup-with-signed-mobileconfig.html
 	err := cmd(fmt.Sprintf(`
 	openssl smime -sign -in %s -out %s -signer %s -inkey %s -certfile %s -outform der -nodetach
 	`, mobileConfigPath, outPath, sslCrtPath, sslKeyPath, iosCrtPath))

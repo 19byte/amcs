@@ -1,4 +1,4 @@
-# amcs(apple mobile config sign)
+# amcs(apple mobile config signature)
 sign Apple’s mobileconfig file to solve the ‘unsigned’ problem
 
 # the project rely openssl
@@ -22,7 +22,7 @@ openssl req -new -sha256 -key ios.key -out ios.csr
 ```
 go get github.com/19byte/amcs
 
-err := mobilieconfig.Sign(mobileconfigPath,outPath,sslKeyPath,sslCrtPath,iosCrtPath)
+err := amcs.Sign(mobileconfigPath,outPath,sslKeyPath,sslCrtPath,iosCrtPath)
 if err != nil {
     panic(err)
 }

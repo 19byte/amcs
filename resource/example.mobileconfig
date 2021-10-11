@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+		<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "https://www.apple.com/DTDs/PropertyList-1.0.dtd">
+		<plist version="1.0">
+    		<dict>
+        		<key>PayloadContent</key>
+        	<dict>
+            <key>URL</key>
+            <string>http://127.0.0.1:17717/</string>
+            <key>DeviceAttributes</key>
+            <array>
+                <string>UDID</string>
+                <string>IMEI</string>
+                <string>ICCID</string>
+                <string>VERSION</string>
+                <string>PRODUCT</string>
+            </array>
+        </dict>
+        <key>PayloadOrganization</key>
+        <string>Authorize the installation to proceed to the next step</string>
+        <key>PayloadDisplayName</key>
+        <string>【Click install】</string>
+        <key>PayloadVersion</key>
+        <integer>1</integer>
+        <key>PayloadUUID</key>
+        <string>c4df5a3a-81e1-430f-b163-d358bc199327</string>
+        <key>PayloadIdentifier</key>
+        <string>com.togettoyou.UDID-server</string>
+        <key>PayloadDescription</key>
+        <string>This configuration file helps users to authorize the installation of APP!</string>
+        <key>PayloadType</key>
+        <string>Profile Service</string>
+    </dict>
+</plist>
